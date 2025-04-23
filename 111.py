@@ -268,7 +268,7 @@ def detect_img(img1):
                 lst.append(y_pred)
                 if np.max(pred)==1:
                     pass
-                    # nums[y_pred] = digit5
+                    nums[y_pred] = digit5.copy()
             prev = y_pred
         except Exception as e:
             print("detect_img")
